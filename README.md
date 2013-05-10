@@ -16,7 +16,7 @@ forward or backward one hour at a time (called a step). There are three paramete
 
 The program is run from the command line as:
 
-    %  java Clock {hours} {start} {goal}
+    % java Clock {hours} {start} {goal}
 
 The program displays, to standard output, the shortest number of steps it takes to get from the start to the goal
 time. For example:
@@ -40,7 +40,7 @@ This puzzle was made famous in a scene of the third Die Hard movie.
 
 The program is run from the command line as:
 
-    %   java Water {amount} {jug1} [{jug2} ...]
+    % java Water {amount} {jug1} [{jug2} ...]
     
 The program must run with a minimum of two arguments:
 
@@ -64,4 +64,6 @@ Chess
 Chess is a GUI implementation of the game Solitaire Chess. It takes in a text file with formatting like 
 chessInitialSetup.txt to define initial board layout. The user can play the game to its conclusions without any input
 from the solver. However, at any point in the game the user can ask for the best next move which is found using the
-Solver.
+Solver. Chess is run from the command line as:
+
+    % java Chess inputFile
