@@ -9,12 +9,14 @@ Clock
 ============
 The first puzzle is a clock. The clock only has an hour hand, where N is the number of hours, which can be turned 
 forward or backward one hour at a time (called a step). There are three parameters associated with the clock:
+
     The number of hours, an integer N
     The start time, an integer from 1..N
     The goal time, an integer from 1..N
 
 The program is run from the command line as:
-%  java Clock {hours} {start} {goal}
+
+    %  java Clock {hours} {start} {goal}
 
 The program displays, to standard output, the shortest number of steps it takes to get from the start to the goal
 time. For example:
@@ -30,18 +32,24 @@ Water
 The water puzzle poses the following problem. Assume you are at a lake and have a collection of empty jugs that can
 each hold different amounts of water. The goal is to get a desired amount of water in any one of the jugs using the
 shortest number of steps. A single step consists of one of the following actions:
+
     Fill a single jug up to complete capacity by submerging it in the lake.
     Empty a single jug by dumping all water in the jug into the lake.
     Pour the contents of any one jug into another jug, without exceeding the capacity of the jug being poured into.
 This puzzle was made famous in a scene of the third Die Hard movie.
 
 The program is run from the command line as:
-%   java Water {amount} {jug1} [{jug2} ...]
+
+    %   java Water {amount} {jug1} [{jug2} ...]
+    
 The program must run with a minimum of two arguments:
-The desired amount of water, a positive integer
-The capacity of the first jug, a positive integer
+
+    The desired amount of water, a positive integer
+    The capacity of the first jug, a positive integer
+    
 If any additional arguments are specified, they will be capacities for the remaining jugs. Unlike the example above,
 there is no limit to the number of jugs that may be specified. Sample ouput:
+
     % java Water 4 5 3
     Step 0:  0 0
     Step 1:  5 0
